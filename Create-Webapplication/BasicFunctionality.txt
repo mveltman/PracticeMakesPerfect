@@ -1,0 +1,4 @@
+Functional:
+Landingpage with information
+Some place to read about updates/changelog
+place to share schematics

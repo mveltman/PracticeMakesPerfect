@@ -32,9 +32,17 @@ Ball.penup()
 
 #Function
 def movePaddle(paddle, direction):
-    y = paddle.ycor()
-    y += 20
-    paddle.sety(y)
+    if direction == "up":
+        y = paddle.ycor()
+        if y < (wn.window_height()/2-50):
+            y += 20
+            paddle.sety(y)
+    if direction == "down":
+        y =paddle.ycor()
+        if y > (wn.window_height()/2*-1+50):
+            y -= 20
+            paddle.sety(y)
+        
 
 #keyboard input
 wn.listen()
